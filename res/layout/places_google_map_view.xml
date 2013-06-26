@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingTop="48dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+		<FrameLayout 
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/mapFragmentContainer"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		</FrameLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/updatePosButton"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Location" />
+
+                <Button
+                    android:id="@+id/recenterButton"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recenter Location" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/zoomInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please zoom in..."
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
